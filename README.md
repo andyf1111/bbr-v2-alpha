@@ -1,7 +1,7 @@
 
 # [bbr2 kernel for debian/ubuntu](https://github.com/qwerttvv/bbr-v2-alpha/releases "bbr2 kernel for debian/ubuntu")
 
-### how to install（debian）
+### how to install
 
 `dpkg -i XXX.deb`		分别安装两个文件，XXX.deb是文件名
 
@@ -27,7 +27,7 @@
 ------------
 
 
-## done, enjoy
+
 
 
 
@@ -37,3 +37,6 @@
 
 
 最后，那个ecn模式我不建议添加，似乎那个是DCTCP支持，你加了也没有用
+
+
+## done, enjoy
