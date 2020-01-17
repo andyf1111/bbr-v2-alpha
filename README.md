@@ -11,15 +11,15 @@
 
 `update-grub`		更新启动器
 
-`reboot`		（必须）重启
+`reboot`		重启
 
 `uname -a`		检测内核版本是否正确
 
 `sysctl net.ipv4.tcp_available_congestion_control`		检测模块加载
 
-`sysctl net.ipv4.tcp_congestion_control=bbr2`		设置为bbr2算法
+`echo "net.ipv4.tcp_congestion_control=bbr2" >> /etc/sysctl.conf`		设置为bbr2算法
 
-`reboot`		（~~习惯性~~）重启
+`reboot`		重启
 
 `sysctl net.ipv4.tcp_congestion_control`		看到bbr2就成功了 / If you see bbr2, congratulations, you succeeded
 
@@ -34,3 +34,6 @@
 
 
 [bbr-v2-alpha from google](https://github.com/google/bbr/tree/v2alpha "bbr-v2-alpha from google")
+
+
+最后，那个ecn模式我不建议添加，似乎那个是DCTCP支持，你加了也没有用
